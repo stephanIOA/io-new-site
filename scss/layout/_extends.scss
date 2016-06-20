@@ -1,0 +1,44 @@
+// Center text
+
+%centered {
+ text-align: center;
+}
+
+// Top border
+
+%t-border {
+  border-top: 2px solid $color-border-light;
+}
+
+// Containers
+
+%content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 600px;
+  @media #{$brk-wide} {
+    width: 90%;
+  }
+  @media #{$brk-narrow} {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-top: none;
+  }
+}
+
+// Columns
+
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

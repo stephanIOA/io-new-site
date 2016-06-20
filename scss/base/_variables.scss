@@ -1,0 +1,31 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$grey           : #878787;
+
+
+// Functional color variables
+
+// $color-prim         : $yellow-orange;
+// $color-sec          : $river-bed;
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
+$stack-abolition  : 'Abolition Regular', $stack-sans-serif;
+
+// Border radius
+
+$br: 5px;
+
+// Asset paths
+
+$path-img  : '../img';
+$path-font : '../fonts';
+
+// Media query breakpoints
+
+$brk-narrow : '(max-width: 768px)';
+$brk-wide   : '(max-width: 1024px)';
