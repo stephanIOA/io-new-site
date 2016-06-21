@@ -19,6 +19,7 @@ gulp.task("concatScripts", function() {
 	return gulp.src([
 		'js/jquery.js',
 		'js/modernizr-2.8.3.min.js',
+		'js/sticky.js',
 		'js/main.js'
 		])
 	.pipe(maps.init())

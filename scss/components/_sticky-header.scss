@@ -1,1 +1,37 @@
-// STICKY HEADER
+//  HEADER
+
+// LOGO
+.header-logo {
+	margin-right: 50px;
+	img {
+		width: 30px;
+		margin: 0;
+		padding: 0;
+	}
+	h1 {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+
+.main-header {
+	display: flex;
+	// justify-content: space-around;
+	background: $off-white;
+	padding: 10px 20px;
+	height: 80px;
+	.header-item {
+		// background: blue;
+	}
+	.header-item1,
+	.header-item2,
+	.header-item3,
+	.header-item4 {
+		margin: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
