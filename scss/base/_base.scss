@@ -5,23 +5,20 @@
 }
 
 body {
-  @include text(1em, 1.5, $color: $color-text-base);
   margin: 0;
-  font-family: $stack-helvetica;
+  font-family: $stack-sans-serif;
 }
 
 h1,
 h2 {
-  font-family: $stack-abolition;
+  font-family: $stack-sans-serif;
 }
 
 h2 {
-  @include text(3.3125em, 1.1, normal);
   margin: 0 0 .5em;
 }
 
 h3 {
-  @include text(1.25em, 1.2, $color: $color-text-dark);
   margin-bottom: 1.7em;
 }
 
@@ -53,6 +50,6 @@ a {
     color: #547e8c;
   }
   &:hover {
-    color: rgba($color-link-default, .5);
+    // color: rgba($color-link-default, .5);
   }
 }
