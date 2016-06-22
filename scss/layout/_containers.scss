@@ -9,15 +9,30 @@
 	// margin: 45px auto;
 	// padding: 10px;
 	background: #fff;
-	border-radius: 5px;
+	// border-radius: 5px;
 	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 }
 .item {
 	color: #fff;
-	padding: 15px;
+	padding: 15px 50px;;
 	margin: 1px;	
 	background: #3db5da;
+	height: 600px;
 	// border-radius: 3px;
+}
+
+// GRID
+.item-full {
+	width: 100%;
+}
+.item-half {
+	width: 49%;
+}
+.item-third {
+	width: 25%;
+}
+.item-twothird {
+	width: 74%;
 }
 
 // .primary-content {
