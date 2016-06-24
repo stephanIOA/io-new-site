@@ -1,119 +1,58 @@
-/* 
-------	CONTENT STYLES -------- ***
-*/
-.box-container {
-	display: block;
-	.item {
-		// flex-grow: 1;
-	}
-}
-.grid-item,{
-	position: relative;
-	overflow: hidden;
-}
-
-
-
-.item-third {
-	.article-img {
-	    width: 150px;
-	    height: 200px;
-	    margin: 0 auto;
-	    display: table;
-		div {
+/* -------------------------------- 
+----------- ARTICLE STYLES --------
+----------------------------------- */
+.item-third,
+.item-twothird,
+.item-half {
+	// height: 900px;
+	.article-top {
+		display: table;
+		height: 50%;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.article-img,
+		.article-img-full {
 			display: table-cell;
 			vertical-align: middle;
-			width: 100%;
-			img {
-				max-height: 250px;
-				text-align: center;
-				display: block;
+			div {
+				width: 70%;
 				margin: 0 auto;
+				img {
+					display: block;
+					margin: 0 auto;
+				}
 			}
 		}
 	}
-	.article-img-full {
-		position: relative;
-		margin-top: -10px;
-		margin-bottom: 20px;
-		width: 100%;
-		height: 40%;
-		overflow: hidden;
-	}
-	.article-content {
-		// position: absolute;
-		// padding-right: 50px;
-		// bottom: 0;
-		// margin-bottom: 50px;
-	}
-}
-.item-twothird {
-	.article-content {
-		margin-bottom: 50px;
+	.article-bottom {
+		display: table;
+		height: 50%;
+		.article-content {
+			display: table-cell;
+			vertical-align: bottom;
+		}
 	}
 }
 
-// Article Background Color
-.light-yellow {
-	background: $light-yellow; /* color1 */
-}
-.baby-blue {
-	background: $baby-blue; /* color2 */
-}
-.lime-green {
-	background: $lime-green; /* color3 */
-}
-.dark-brown {
-	background: $dark-brown; /* color4 */
-}
-.blue {
-	background: $blue; /* color5 */
-}
-.light-pink {
-	background: $light-pink; /* color6 */
-}
-.io-black {
-	background: $io-black; /* color7 */
-}
-.light-grey {
-	background: $light-grey; /* color8 */
-}
-.mustard {
-	background: $mustard; /* color9 */
-}
-.purple {
-	background: $purple; /* color10 */
-}
-.beige {
-	background: $beige; /* color11 */
-}
-.dark-green {
-	background: $dark-green; 
-}
-// Articles with black Text
-.light-yellow,
-.baby-blue,
-.lime-green,
-.light-pink,
-.light-grey,
-.mustard,
-.beige  {
-	h2,
-	p,
-	span {
-		color: $black;
-	}
-	a {
-	  transition: 0.5s;
-		&:link {
-		color: $black;
-		cursor: pointer;
-		}
-		&:visited {
-		color: $black;
-		}
+// 1. ARTICLES -- ONE THIRD
+
+
+
+
+// 2. ARTICLES -- TWO THIRDS
+.item-twothird {
+	.article-content {
+		// margin-bottom: 50px;
 	}
 }
+// 3. ARTICLES -- HALF
+.item-half {
+	.article-content {
+		// margin-bottom: 50px;
+	}
+}
+
 
 
 
@@ -137,11 +76,23 @@
 	}
 }
 @media (min-width: 600px) {
-	.item-third {
-		.article-img-full {
-			position: relative;
-			max-width: 40%;
-			margin: 0 auto;
+	.item-third,
+	.item-half,
+	.item-twothird {
+		.article-img-full,
+		.article-img {
+		    width: 150px;
+		    height: 200px;
+		    margin: 0 auto;
+		    display: table;
+			div {
+				img {
+					max-height: 250px;
+					text-align: center;
+					display: block;
+					margin: 0 auto;
+				}
+			}
 			// margin-bottom: 30px;
 		}
 		.article-content {
@@ -178,13 +129,20 @@
 			height: 50%;
 			overflow: hidden;
 			width: 100%;
-			max-width: 100%;
+			display: inline-block;
+			div {
+				// display: inline;
+				img {
+					max-height: 100%;
+					width: 100%;
+				}
+			}
 		}
 		.article-content {
-			position: absolute;
-			padding-right: 50px;
-			bottom: 0;
-			margin-bottom: 50px;
+			// position: absolute;
+			// padding-right: 50px;
+			// bottom: 0;
+			// margin-bottom: 50px;
 		}
 	}
 	.item-twothird, {
@@ -193,29 +151,25 @@
 			width: 70%;
 			margin-right: -20%;
 		}
-	}
-	.item-half, {
-		.article-img {
-			float: right;
-			width: 80%;
-			margin-right: -35%;
-		}
-	}
-
-	.item-twothird {
 		.article-content {
-			position: absolute;
-			bottom: 0;
-			width: 50%;
+			// position: absolute;
+			// bottom: 0;
+			// width: 50%;
 		}
 	}
 	.item-half {
-		.article-content {
-			position: absolute;
-			bottom: 0;
-			width: 50%;
-			margin-bottom: 50px;
+		.article-img {
+		    float: right;
+		    width: 70%;
+		    margin-right: -20%;
 		}
+		.article-content {
+			// position: absolute;
+			// bottom: 0;
+			// width: 50%;
+			// margin-bottom: 50px;
+		}
+
 	}
 
 	.article-url {

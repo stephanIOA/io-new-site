@@ -1,0 +1,67 @@
+/* -------------------------------- 
+---------- ARTICLE COLORS ---------
+----------------------------------- */
+
+
+// Article Background Colors
+.light-yellow {
+	background: $light-yellow;
+}
+.baby-blue {
+	background: $baby-blue;
+}
+.lime-green {
+	background: $lime-green;
+}
+.dark-brown {
+	background: $dark-brown;
+}
+.blue {
+	background: $blue;
+}
+.light-pink {
+	background: $light-pink;
+}
+.io-black {
+	background: $io-black;
+}
+.light-grey {
+	background: $light-grey;
+}
+.mustard {
+	background: $mustard;
+}
+.purple {
+	background: $purple;
+}
+.beige {
+	background: $beige;
+}
+.dark-green {
+	background: $dark-green; 
+}
+
+// Articles with DARK Text
+.light-yellow,
+.baby-blue,
+.lime-green,
+.light-pink,
+.light-grey,
+.mustard,
+.beige  {
+	h2,
+	p,
+	span {
+		color: $io-black;
+	}
+	a {
+	  transition: 0.5s;
+		&:link {
+		color: $io-black;
+		cursor: pointer;
+		}
+		&:visited {
+		color: $io-black;
+		}
+	}
+}

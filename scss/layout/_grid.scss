@@ -1,8 +1,10 @@
-// LAYOUT GRID
+/* -------------------------------- 
+-------------- GRIDS --------------
+----------------------------------- */
 
+/* HOME PAGE ARTICLE's GRID */
 
-
-// GRID > 600px
+// GRID < 960px
 .item-full {
 	width: 100%;
 }
@@ -16,8 +18,12 @@
 	width: 100%;
 }
 
+/* -------------------------------
+----  MEDIA QUERIES
+---------------------------------- */
+
 @media (min-width: 960px) {
-	// GRID > 600px
+	/* HOME PAGE ARTICLE's GRID (>960) */
 	.item-full {
 		width: 100%;
 	}

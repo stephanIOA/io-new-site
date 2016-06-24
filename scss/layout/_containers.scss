@@ -1,44 +1,46 @@
-// LAYOUT CONTAINERS
-.grid-item {
-	height: 500px;
-	padding: 50px 50px;
-	color: #fff;
-}
+/* -------------------------------- 
+-------------- CONTAINERS ---------
+----------------------------------- */
+
+// Main Content Container
 .primary-content {
 	position: relative;
-	z-index: 1;
-}
-
-
-.row {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-
-.box-container {
-	// margin: 45px auto;
-	// padding: 10px;
-	background: #fff;
-	// border-radius: 5px;
-	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
-}
-@media (min-width: 480px) {
-	.grid-item {
-		height: 500px;
-		padding: 50px 50px;
+	// Holds all Articles
+	.box-container {
+		display: block;
+		background: #fff;
 	}
 }
+
+// Individual Article Box
+.grid-item {
+	height: 600px;
+	padding: 50px 50px;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+
+/* -------------------------------
+----  MEDIA QUERIES
+---------------------------------- */
+@media (min-width: 480px) {
+	// .grid-item {
+	// 	height: 500px;
+	// 	padding: 50px 50px;
+	// }
+}
 @media (min-width: 600px) {
+	// Individual Article Box > 600px
 	.grid-item {
-	padding: 50px 150px;
+		padding: 50px 150px;
 	}
 }
 @media (min-width: 960px) {
+	// Individual Article Box > 960px
 	.grid-item {
-		
+		height: 600px;	
 		padding: 50px 50px;
-		background: #3db5da;
-		height: 600px;
 	}
 }
