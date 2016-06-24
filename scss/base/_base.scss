@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: $stack-sans-serif;
+  font-family: $stack-fjord;
 }
 
 h1,
@@ -15,17 +15,24 @@ h2 {
 }
 
 h2 {
-  margin: 0 0 .5em;
+  margin: 0 0 1.4em;
+  font-size: 1.8em;
 }
 
 h3 {
   margin-bottom: 1.7em;
 }
 
+p {
+  line-height: 1.6;
+}
+
+span {
+  font-family: $stack-sans-serif;
+}
+
 img {
   max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: $br;
 }
 
 ul,
@@ -37,19 +44,33 @@ li {
   margin-bottom: 10px;
 }
 
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: $stack-sans-serif;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
 /* Pseudo-classes ------------------ */
 
 a {
   transition: 0.5s;
   &:link {
-    color: #a3b1c3;
+    color: $white;
     cursor: pointer;
-    text-decoration: none;
+    // text-decoration: none;
   }
   &:visited {
-    color: #547e8c;
+    color: $white;
   }
   &:hover {
-    // color: rgba($color-link-default, .5);
+    opacity: 0.5;
   }
 }

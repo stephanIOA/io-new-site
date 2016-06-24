@@ -2,6 +2,16 @@
 
 // @include font-face('Abolition Regular', abolition-regular);
 
+// CATEGORY/FILTER TITLE
+.box-container {
+	.cat-title {
+		text-transform: uppercase;
+		font-size: 0.7em;
+		display: block;
+		margin-bottom: 0.3em;
+	}
+}
+
 // .main {
 //   &-heading {  
 //     @include text(5.625rem, 1.3, normal, $color-text-dark);

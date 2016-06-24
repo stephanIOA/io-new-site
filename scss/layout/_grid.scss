@@ -1,0 +1,33 @@
+// LAYOUT GRID
+
+
+
+// GRID > 600px
+.item-full {
+	width: 100%;
+}
+.item-half {
+	width: 100%;
+}
+.item-third {
+	width: 100%;
+}
+.item-twothird {
+	width: 100%;
+}
+
+@media (min-width: 960px) {
+	// GRID > 600px
+	.item-full {
+		width: 100%;
+	}
+	.item-half {
+		width: 50%;
+	}
+	.item-third {
+		width: 33.33333333%;
+	}
+	.item-twothird {
+		width: 66.66666667%;
+	}
+}

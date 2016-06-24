@@ -1,4 +1,15 @@
 // LAYOUT CONTAINERS
+.grid-item {
+	height: 500px;
+	padding: 50px 50px;
+	color: #fff;
+}
+.primary-content {
+	position: relative;
+	z-index: 1;
+}
+
+
 .row {
   max-width: 1280px;
   margin: 0 auto;
@@ -12,42 +23,22 @@
 	// border-radius: 5px;
 	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 }
-.item {
-	color: #fff;
-	padding: 15px 50px;;
-	margin: 1px;	
-	background: #3db5da;
-	height: 600px;
-	// border-radius: 3px;
+@media (min-width: 480px) {
+	.grid-item {
+		height: 500px;
+		padding: 50px 50px;
+	}
 }
-
-// GRID
-.item-full {
-	width: 100%;
+@media (min-width: 600px) {
+	.grid-item {
+	padding: 50px 150px;
+	}
 }
-.item-half {
-	width: 49%;
+@media (min-width: 960px) {
+	.grid-item {
+		
+		padding: 50px 50px;
+		background: #3db5da;
+		height: 600px;
+	}
 }
-.item-third {
-	width: 25%;
-}
-.item-twothird {
-	width: 74%;
-}
-
-// .primary-content {
-//   @extend %content;
-//   @extend %centered;
-//   @extend %t-border;
-// 	padding-top: 25px;
-//   padding-bottom: 95px;
-// }
-
-// .secondary-content {
-//   @extend %content;
-//   @extend %t-border;
-//   @extend %clearfix;
-//   padding-top: 80px;
-// 	padding-bottom: 70px;
-//   border-bottom: 2px solid $color-border-light;
-// }

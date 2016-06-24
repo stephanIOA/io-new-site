@@ -2,16 +2,22 @@
 
 $white          : #fff;
 $off-white		: #f6f6f6;
-$black          : #000;
+$black          : #263135;
 $grey           : #878787;
 
 // Article Colors
-$color1			: #ffe7ab;
-$color2			: #aee9ef;
-$color3			: #63c987;
-$color4			: #4b382a;
-$color5			: #479dd6;
-$color6			: #ffcccb;
+$light-yellow	: #ffe7ab;
+$baby-blue		: #aee9ef;
+$lime-green		: #63c987;
+$dark-brown		: #4b382a;
+$blue			: #479dd6;
+$light-pink		: #ffcccb;
+$io-black		: $black;
+$light-grey		: #d1d9db;
+$mustard		: #fec045;
+$purple			: #4d3d57;
+$beige			: #e6e8da;
+$dark-green		: #1d9b5b;
 
 
 // Functional color variables
@@ -22,6 +28,7 @@ $color6			: #ffcccb;
 // Font stacks
 
 $stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-fjord : 'Fjord One', serif;
 
 
 // Border radius
