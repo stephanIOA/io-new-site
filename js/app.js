@@ -15167,16 +15167,16 @@ $(function(){
     });
 });
 
-// 4 Scroll Reveal
-var fooReveal = {
-	origin      : 'left',
-	distance    : '500px',
-	delay		: 200,
-    enter		: 'right',
-    wait		: '1s',
-    move		: '200px',
-};
+// // 4 Scroll Reveal
+// var fooReveal = {
+// 	origin      : 'top',
+// 	distance    : '0px',
+// 	delay		: 200,
+//     enter		: 'right',
+//     wait		: '1s',
+//     reset		: true,
+// };
 
-window.sr = ScrollReveal({ duration: 1000 });
-sr.reveal('.article-content', fooReveal);
+// window.sr = ScrollReveal({ duration: 1000 });
+// sr.reveal('.grid-item', fooReveal);
 //# sourceMappingURL=app.js.map
