@@ -22,6 +22,7 @@ gulp.task("concatScripts", function() {
 		'js/sticky.js',
 		'js/isotope.js',
 		'js/succinct.js',
+		'js/scrollreveal.js',
 		'js/main.js'
 		])
 	.pipe(maps.init())

@@ -16,9 +16,22 @@ $('.filter-button-group').on( 'click', 'button', function() {
   $grid.isotope({ filter: filterValue });
 });
 
-
+// 3. Truncation of Paragraphs
 $(function(){
     $('.truncate').succinct({
         size: 140
     });
 });
+
+// 4 Scroll Reveal
+var fooReveal = {
+	origin      : 'left',
+	distance    : '500px',
+	delay		: 200,
+    enter		: 'right',
+    wait		: '1s',
+    move		: '200px',
+};
+
+window.sr = ScrollReveal({ duration: 1000 });
+sr.reveal('.article-content', fooReveal);
