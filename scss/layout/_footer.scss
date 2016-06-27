@@ -1,12 +1,22 @@
 // FOOTER STYLES
 
-// .main-footer {
-//   @extend %centered;
-//   padding-top: 30px;
-//   padding-bottom: 60px;
-//   border-top:	1px solid  $color-border-dark;
-//   border-bottom: 10px solid $color-border-dark;
-//   @media #{$brk-narrow} {
-//   	padding: 20px 0;
-//   }
-// }
+.main-footer {
+  @extend %centered;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  font-family: $stack-sans-serif;
+  // border-top:	1px solid  red;
+  // border-bottom: 10px solid red;
+  background: $off-white;
+  font-size: 0.9em;
+  color: #bbb9b9;
+  letter-spacing: 1px;
+  @media #{$brk-narrow} {
+  	padding: 20px 0;
+  }
+  a {
+  	text-decoration: none;
+  	color: #484747;
+  	font-weight: 700;
+  }
+}

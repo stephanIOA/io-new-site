@@ -21,6 +21,7 @@ gulp.task("concatScripts", function() {
 		'js/modernizr-2.8.3.min.js',
 		'js/sticky.js',
 		'js/isotope.js',
+		'js/succinct.js',
 		'js/main.js'
 		])
 	.pipe(maps.init())

@@ -8,7 +8,6 @@
 	// Holds all Articles
 	.box-container {
 		display: block;
-		background: #fff;
 	}
 }
 
@@ -34,6 +33,7 @@
 @media (min-width: 600px) {
 	// Individual Article Box > 600px
 	.grid-item {
+		height: 650px;
 		padding: 50px 150px;
 	}
 }
@@ -42,5 +42,11 @@
 	.grid-item {
 		height: 600px;	
 		padding: 50px 50px;
+	}
+}
+@media (min-width: 1600px) {
+	.primary-content {
+		max-width: 1700px;
+		margin: 0 auto;
 	}
 }
