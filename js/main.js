@@ -35,3 +35,10 @@ $(function(){
 
 // window.sr = ScrollReveal({ duration: 1000 });
 // sr.reveal('.grid-item', fooReveal);
+
+// 5. Masonry
+
+$('.grid').masonry({
+  columnWidth: 200,
+  itemSelector: '.grid-item'
+});
