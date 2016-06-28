@@ -51,9 +51,9 @@ button {
   border: none;
   font-family: $stack-sans-serif;
   transition: 0.5s;
-  &:hover {
-    opacity: 0.5;
-  }
+  // &:hover {
+  //   opacity: 0.5;
+  // }
   &:focus {
     outline: 0;
   }
