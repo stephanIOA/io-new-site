@@ -9,11 +9,12 @@
 }
 .is-sticky .main-header {
 	transition: 0.4s;
-    box-shadow: 0px 0px 5px $io-black;
-    background: $io-black;
+    // box-shadow: 0px 0px 5px $io-black;
+    border-bottom: 1.5px solid $io-black;
+    // background: $io-black;
 }
 .is-sticky .main-header .button-group button {
-	color: $off-white;
+	// color: $off-white;
 }
 .is-sticky {
 	.header-logo {

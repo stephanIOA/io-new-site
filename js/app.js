@@ -14215,7 +14215,7 @@ $('.filter-button-group').on( 'click', 'button', function() {
 // 3. Truncation of Paragraphs
 $(function(){
     $('.truncate').succinct({
-        size: 220
+        size: 280
     });
 });
 
