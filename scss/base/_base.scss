@@ -64,12 +64,12 @@ button {
 a {
   transition: 0.5s;
   &:link {
-    // color: $white;
+    color: $white;
     cursor: pointer;
     // text-decoration: none;
   }
   &:visited {
-    // color: $white;
+    color: $white;
   }
   &:hover {
     opacity: 0.5;
