@@ -47,18 +47,14 @@ nav {
 			font-size: 0.8em;
 			font-weight: 300;
 			text-align: center;
-			padding: .6em;
-
+			padding: .6em;			
 			button {
-
+				border-bottom: 1px solid $off-white;
+				letter-spacing: 0.5px;
 				&:hover {
 					color: #0b0b0b;
 					border-bottom: #52bab3;
 					border-bottom: 1px solid #52bab3;
-				}
-				a {
-					color: $io-black;
-					text-decoration: none;
 				}
 			}	
 		}

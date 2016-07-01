@@ -1,16 +1,17 @@
 // FOOTER STYLES
 
 .main-footer {
-  @extend %centered;
-  padding-top: 90px;
+  // @extend %centered;
+  padding-top: 30px;
+  padding-left: 50px;
   padding-bottom: 30px;
   font-family: $stack-sans-serif;
   // border-top:	1px solid  red;
   // border-bottom: 10px solid red;
   background: $off-white;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #bbb9b9;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   @media #{$brk-narrow} {
   	padding: 20px 0;
   }
