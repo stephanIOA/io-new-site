@@ -22,3 +22,22 @@ $(function(){
         size: 220
     });
 });
+
+// 4: Mobile Menu 
+$(function() {
+    var pull        = $('#pull');
+        menu        = $('nav ul');
+        menuHeight  = menu.height();
+ 
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 769 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+}); 

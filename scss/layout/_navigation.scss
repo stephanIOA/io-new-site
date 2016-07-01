@@ -6,7 +6,20 @@
 	flex-direction: column;
 }
 
+nav {
+	a#pull {
+		color: $io-black;
+	}
+	a#pull:link {
+		color: $io-black !important;
+	}
+}
 
+nav {
+	.nav {
+		display: none;
+	}
+}
 .main-header {
 	padding-top: 2em;
 	padding-left: 1em;
@@ -59,6 +72,14 @@
 ---------------------------------- */
 
 @media (min-width: 769px) {
+	nav {
+		display: flex;
+		align-self: center;
+		.nav {
+			display: flex;
+			align-self: center;
+		}
+	}
 	.main-header {
 		padding-top: 1em;
 		padding-bottom: 1em;
@@ -74,9 +95,16 @@
 			li {
 				border-bottom-color:transparent;
 				font-size: 0.9em;
+			    padding-bottom: 0;
 			}
 		}
 	}
+
+	nav {
+		a#pull {
+			display: none;
+		}
+}
 
 
 }
