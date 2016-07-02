@@ -13,6 +13,16 @@ nav {
 	a#pull:link {
 		color: $io-black !important;
 	}
+	a#pull:after {
+        content:"";
+        background: url('../img/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 22px;
+	}
 }
 
 nav {
@@ -21,16 +31,16 @@ nav {
 	}
 }
 .main-header {
-	padding-top: 2em;
+	padding-top: 0.5em;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 0.5em;
 	background: $off-white;
 	// width: 100vw;
 	// z-index: 2000;
 	.site-logo {
-		width: 50px;
-		align-self: center;
+		width: 40px;
+		// align-self: center;
 	}
 	.nav {
 		margin-top: 1.5em;
@@ -83,6 +93,7 @@ nav {
 		justify-content: flex-end;
 		.site-logo {
 			width: 60px;
+			align-self: center;
 		}
 		.nav {
 			flex-direction: row;
