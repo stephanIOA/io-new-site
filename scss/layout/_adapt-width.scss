@@ -1,0 +1,17 @@
+/* -------------------------------- 
+---- LAST BOX WIDTH ADAPT ---------
+----------------------------------- */
+.endfull {
+  right: 0 !important;
+  // transition: 1s;
+  width: initial;
+}
+
+.item-third.endfull {
+	.article-bottom {
+		.article-content {
+			padding-left: 30%;
+			padding-right: 30%;
+		}
+	}
+}
