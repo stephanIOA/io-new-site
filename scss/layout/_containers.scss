@@ -24,12 +24,7 @@
 /* -------------------------------
 ----  MEDIA QUERIES
 ---------------------------------- */
-@media (min-width: 480px) {
-	// .grid-item {
-	// 	height: 500px;
-	// 	padding: 50px 50px;
-	// }
-}
+
 @media (min-width: 600px) {
 	// Individual Article Box > 600px
 	.grid-item {
@@ -44,9 +39,3 @@
 		padding: 50px 50px;
 	}
 }
-// @media (min-width: 1600px) {
-// 	.primary-content {
-// 		max-width: 1700px;
-// 		margin: 0 auto;
-// 	}
-// }

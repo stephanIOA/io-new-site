@@ -1,59 +1,12 @@
-//  HEADER
+/* -------------------------------- 
+--- STICKY HEADER --
+----------------------------------- */
 .sticky-wrapper {
 	position: relative;
 	z-index: 1000;
-	// box-shadow: 2px 3px #000;
 }
-.sticky-wrapper.is-sticky {
-	box-shadow: 2px 3px #000;
-}
+
 .is-sticky .main-header {
 	transition: 0.4s;
     box-shadow: 0px -3px 10px $io-black;
-    // border-bottom: 1.5px solid #52bab3;
-    // background: $io-black;
 }
-.is-sticky .main-header .button-group button {
-	// color: $off-white;
-}
-.is-sticky {
-	.header-logo {
-		margin: 0;
-		// transition: 0.2s;
-		background: #fff;
-		img {
-		
-		}
-	}
-}
-
-
-
-// .main-header {
-// 	.button-group {
-// 		button {
-// 			margin-left: 30px;
-// 			margin-right: 30px;
-// 			color: #484747;
-// 			font-size: 0.9em;
-// 			letter-spacing: 1px;
-// 		}
-// 	}
-// }
-
-
-
-// LOGO
-// .header-logo {
-// 	img {
-// 		width: 30px;
-// 		margin-left: 20px;
-// 		margin-right: 20px;
-// 		padding: 0;
-// 	}
-// 	h1 {
-// 		display: none;
-// 		margin: 0;
-// 		padding: 0;
-// 	}
-// }
