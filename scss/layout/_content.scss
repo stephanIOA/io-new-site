@@ -100,15 +100,17 @@
 			height: 70%;
 		}
 	}
-}
 
-.item-half {
-	.article-top {
-		.article-img {
-		    display: none;
+	.item-half {
+		.article-top {
+			.article-img {
+			    display: none;
+			}
 		}
 	}
 }
+
+	
 
 @media (min-width: 600px) {
 
@@ -133,15 +135,16 @@
 			}
 		}
 	}
-}
-
-.item-half {
+	.item-half {
 	.article-top {
 		.article-img {
 		    display: initial;
+			}
 		}
 	}
 }
+
+
 
 
 @media (min-width: 960px) {
