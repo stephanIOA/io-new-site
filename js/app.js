@@ -14209,7 +14209,15 @@ var $grid = $('.grid').isotope({
 // filter items on button click
 $('.filter-button-group').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
+  $(".endfull").removeClass("endfull");
   $grid.isotope({ filter: filterValue });
+});
+
+$grid.on("arrangeComplete", function(e, t) {
+  if (!t.length) return false;
+  var n = ($(t[0].element),
+  $(t[t.length - 1].element));
+  n.addClass("endfull");
 });
 
 // 3. Truncation of Paragraphs
