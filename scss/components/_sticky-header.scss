@@ -9,8 +9,8 @@
 }
 .is-sticky .main-header {
 	transition: 0.4s;
-    // box-shadow: 0px 0px 5px $io-black;
-    border-bottom: 1.5px solid #52bab3;;
+    box-shadow: 0px -3px 10px $io-black;
+    // border-bottom: 1.5px solid #52bab3;
     // background: $io-black;
 }
 .is-sticky .main-header .button-group button {

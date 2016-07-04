@@ -4,22 +4,19 @@
 .item-third,
 .item-twothird,
 .item-half {
-	// height: 900px;
 	.article-top {
 		display: table;
 		height: 30%;
 		width: 100%;
 		overflow: hidden;
-		// padding-top: 20px;
-		// padding-bottom: 20px;
 		.article-img,
-		.article-img-full {
+		.article-img-full,
+		.article-img-noside {
 			display: table-cell;
 			vertical-align: middle;
 			div {
 				width: 70%;
 				margin: 0 auto;
-			    // overflow: hidden;
 			    max-height: 120px;
 				img {
 					display: block;
@@ -35,6 +32,29 @@
 			display: table-cell;
 			vertical-align: top;
 			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+.item-half {
+	.article-top {
+		.article-img {
+		    display: none;
+		}
+	}
+}
+
+
+
+// CONTACT BOX
+.item-third {
+	.contact-container {
+		height: 100%;
+		display: table;
+		.article-contact {
+			display: table-cell;
+			vertical-align: middle;
 		}
 	}
 }
@@ -49,32 +69,11 @@
 }
 
 
-// 1. ARTICLES -- ONE THIRD
-
-
-
-
-// 2. ARTICLES -- TWO THIRDS
-.item-twothird {
-	.article-content {
-		// margin-bottom: 50px;
-	}
-}
-// 3. ARTICLES -- HALF
-.item-half {
-	.article-content {
-		// margin-bottom: 50px;
-	}
-}
-
-
-
-
 @media (min-width: 480px) {
+
 	.item-third,
 	.item-twothird,
 	.item-half {
-		// height: 900px;
 		.article-top {
 			display: table;
 			height: 40%;
@@ -101,25 +100,18 @@
 			height: 70%;
 		}
 	}
-	.item-third {
-		.article-content {
-			// position: absolute;
-			// // padding-right: 150px;
-			// bottom: 0;
-			// margin-bottom: 50px;
-		}
-	}
+}
 
-	.item-twothird {
-		.article-content {
-			// position: absolute;
-			// padding-right: 150px;
-			bottom: 0;
-			margin-bottom: 50px;
+.item-half {
+	.article-top {
+		.article-img {
+		    display: none;
 		}
 	}
 }
+
 @media (min-width: 600px) {
+
 	.item-third,
 	.item-half,
 	.item-twothird {
@@ -138,17 +130,22 @@
 						margin: 0 auto;
 					}
 				}
-				// margin-bottom: 30px;
-			}
-		}
-		.article-bottom {
-			.article-content {
-				vertical-align: top;
 			}
 		}
 	}
 }
+
+.item-half {
+	.article-top {
+		.article-img {
+		    display: initial;
+		}
+	}
+}
+
+
 @media (min-width: 960px) {
+
 	.box-container {
 		display: flex;
 		flex-wrap: wrap;
@@ -157,25 +154,66 @@
 			flex-grow: 1;
 		}
 	}
+
 	.grid-item,{
 		position: relative;
 		overflow: hidden;
 	}
-	.item-third,
-	.item-half,
-	.item-twothird {
+
+	// Third Top & Bottom
+	.item-third {
+		.article-top {
+			height: 35%;
+		}
 		.article-bottom {
+			height: 65%;
 			.article-content {
-				padding-top: 20px;
-				vertical-align: top;
+				padding-top: 0;
+				vertical-align: bottom;
+				padding-bottom: 50px;
 			}
 		}
 	}
 
-	// Image inside Article - Third
+	// TwoThirds Top & Bottom
+	.item-twothird,
+	.item-half {
+		.article-top {
+			height: 20%;
+		}
+		.article-bottom {
+			height: 80%;
+			.article-content {
+				vertical-align: bottom;
+				padding-bottom: 50px;
+			}
+		}
+	}
+
+	// Half Column - Paragraph Text Width
+	// TwoThird Column - Paragraph Text Width
+	.item-half,
+	.item-twothird {
+		.article-bottom {
+			width: 380px;
+		}
+	}
+
+	// TwoThird column with Image that shows its full width
+	.item-twothird {
+		.article-top {
+			.article-img-noside {
+				position: absolute;
+				max-width: 700px;
+				right: -20px;
+				top:15%;
+			}
+		}
+	}
+
+	// Third --Article Image--
 	.item-third {
 		.article-top {
-			height: 35%;
 			.article-img {
 			    div {
 			    	img {
@@ -192,7 +230,6 @@
 				width: 100%;
 				display: inline-block;
 				div {
-					// display: inline;
 					img {
 						max-height: 100%;
 						width: 100%;
@@ -202,48 +239,67 @@
 
 		}
 	}
-	.item-twothird, {
-		.article-img {
-			float: right;
-			width: 70%;
-			margin-right: -20%;
-		}
-		.article-content {
-			// position: absolute;
-			// bottom: 0;
-			// width: 50%;
-		}
-	}
-	.item-half,
-	.item-twothird {
+
+	// Half Column --Article Image--
+	.item-half {
 		.article-top {
-			display: inline-block;
 			overflow: initial;
-			height: 35%;
 			.article-img {
-			    float: right;
-			    width: 100%;
-			    margin-right: -40%;
+			    // position: absolute;
+			    display: none;
+			    // top: 40px;
+			    // right: -140px;
     			div {
 				    max-height: 100%;
 				    img {
 				    	max-height: 800px;
-				    	max-width: 500px;
+				    	max-width: 400px;
 				    }
 				}			
 			}
 		}
 	}
-	.item-half {
-		.article-bottom {
-			width: 60%;
-		}
-	}
+
+	// TwoThird --Article Image--
 	.item-twothird {
 		.article-top {
-			height: 30%;
+			overflow: initial;
+			.article-img {
+				display: none;
+    			div {
+				    max-height: 100%;
+				    img {
+				    	max-height: 800px;
+				    	max-width: 1000px;
+				    }
+				}			
+			}
+		}
+	}
+}
+
+
+@media (min-width: 1300px) {
+
+		// Half Column --Article Image--
+	.item-half {
+		.article-top {
+			overflow: initial;
 			.article-img {
 			    position: absolute;
+			    display: initial;
+			    // top: 40px;
+			    // right: -140px;
+			}
+		}
+	}
+	// TwoThird --Article Image--
+	.item-twothird {
+		.article-top {
+			.article-img {
+				display: initial;
+			    position: absolute;
+			    margin-right: -50%;
 			    top: 50px;
 			    right: -10px;
 			    max-width: 1000px;
@@ -257,13 +313,6 @@
 				}			
 			}
 		}
-		.article-bottom {
-			width: 45%;
-		}
-	}
+	}	
 
-	.article-url {
-		padding-top: 20px;
-		display: block;
-	}
 }
