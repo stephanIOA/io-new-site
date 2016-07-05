@@ -6,7 +6,7 @@
 .item-half {
 	.article-top {
 		display: table;
-		height: 30%;
+		height: 20%;
 		width: 100%;
 		overflow: hidden;
 		.article-img,
@@ -15,7 +15,7 @@
 			display: table-cell;
 			vertical-align: middle;
 			div {
-				width: 70%;
+				width: 80%;
 				margin: 0 auto;
 			    max-height: 120px;
 				img {
@@ -138,9 +138,13 @@
 	}
 	.item-half {
 		.article-top {
+			height: 15%;
 			.article-img-side {
-			    display: initial;
+			    // display: initial;
 			}
+		}
+		.article-bottom {
+			height: 85%;
 		}
 	}
 }
@@ -189,6 +193,16 @@
 				vertical-align: bottom;
 				padding-bottom: 50px;
 			}
+		}
+	}
+
+	// Half Column Top & Bottom
+	.item-half {
+		.article-top {
+			height: 15%;
+		}
+		.article-bottom {
+			height: 85%;
 		}
 	}
 
@@ -296,7 +310,7 @@
 			.article-img-side {
 			    position: absolute;
 			    display: initial;
-			    top: 100px;
+			    top: 150px;
 			    right: -20px;
 			    max-width: 350px;
 			    div	{
@@ -339,4 +353,40 @@
 		}
 	}
 
+	// Half Column - Paragraph Text Width
+	// TwoThird Column - Paragraph Text Width
+	.item-half,
+	.item-twothird {
+		.article-bottom {
+			width: 50%;
+		}
+	}
+
+}
+
+@media (min-width: 1500px) {
+		// Half Column --Article Image--
+	.item-half {
+		.article-top {
+			.article-img-side {
+			    top: 50px;
+			    right: 100px;
+			}
+		}
+	}
+	.item-twothird {
+		.article-top {
+			.article-img {
+				right: 250px;
+			}
+		}
+	}
+
+
+}
+
+@media (min-width: 961px) and (max-width: 1500px) {
+	.grid-item {
+		height: 700px;
+	}
 }

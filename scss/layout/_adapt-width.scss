@@ -1,13 +1,18 @@
 /* -------------------------------- 
 ---- LAST BOX WIDTH ADAPT ---------
 ----------------------------------- */
-.endfull {
+// .endfull {
+//   right: 0 !important;
+//   // transition: 1s;
+//   width: initial;
+// }
+.endfull, .grid-item:last-child {
   right: 0 !important;
-  // transition: 1s;
   width: initial;
 }
-
-
+.grid-item:last-child {
+  right: 0;
+}
 
 @media (min-width: 960px) {
 	.item-third.endfull {
@@ -19,5 +24,32 @@
 				// padding-right: 30%;
 			}
 		}
+	}
+
+	.item-half.endfull,
+	.item-twothird.endfull {
+		padding-left: 300px;
+		padding-right: 300px;
+		.article-top {
+			.article-img-side {
+				display: initial;
+				position: absolute;
+				right: 300px;
+				bottom: 0;
+				div {
+					overflow: initial;
+				}
+			}
+		}
 	}	
+}
+
+@media (min-width: 961px) and (max-width: 1250px) {
+	.item-half.endfull {
+		.article-top {
+			.article-img-side {
+				display: none;
+			}
+		}
+	}
 }

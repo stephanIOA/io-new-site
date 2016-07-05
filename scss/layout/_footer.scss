@@ -9,12 +9,23 @@
   font-family: $stack-sans-serif;
   background: $off-white;
   color: #bbb9b9;
+  // height: 1000px;
   font-size: 0.8em;
       a {
         text-decoration: none;
         color: #484747;
         font-weight: 700;
     }
+}
+
+// STICKY FOOTER
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  flex: 1;
 }
 
 @media (min-width: 480px) {
@@ -24,6 +35,5 @@
     padding-left: 50px;
     padding-bottom: 30px;    
     letter-spacing: 0.5px;
-
   }
 }
