@@ -17,7 +17,7 @@
 			div {
 				width: 80%;
 				margin: 0 auto;
-			    max-height: 120px;
+			    max-height: em(120px);
 				img {
 					display: block;
 					margin: 0 auto;
@@ -31,8 +31,8 @@
 		.article-content {
 			display: table-cell;
 			vertical-align: top;
-			padding-top: 20px;
-			padding-bottom: 50px;
+			padding-top: em(20px);
+			padding-bottom: em(50px);
 		}
 	}
 }
@@ -63,7 +63,7 @@
 // Article Links
 .article-url {
 	position: absolute;
-	bottom: 50px;
+	bottom: em(50px);
 	a {
 		font-family: $stack-fjord;
 	}
@@ -125,9 +125,9 @@
 					width: 50%;
 					margin: 0 auto;
 				    overflow: hidden;
-				    max-height: 500px;
+				    max-height: em(500px);
 					img {
-						max-height: 250px;
+						max-height: em(250px);
 						text-align: center;
 						display: block;
 						margin: 0 auto;
@@ -176,7 +176,7 @@
 			.article-content {
 				padding-top: 0;
 				vertical-align: bottom;
-				padding-bottom: 50px;
+				padding-bottom: em(50px);
 			}
 		}
 	}
@@ -191,7 +191,7 @@
 			height: 80%;
 			.article-content {
 				vertical-align: bottom;
-				padding-bottom: 50px;
+				padding-bottom: em(50px);
 			}
 		}
 	}
@@ -211,7 +211,7 @@
 	.item-half,
 	.item-twothird {
 		.article-bottom {
-			width: 380px;
+			width: em(380px);
 		}
 	}
 
@@ -220,8 +220,8 @@
 		.article-top {
 			.article-img-side {
 				position: absolute;
-				max-width: 700px;
-				right: -20px;
+				max-width: em(700px);
+				right: em(-20px);
 				top:15%;
 			}
 		}
@@ -233,7 +233,7 @@
 			.article-img {
 			    div {
 			    	img {
-			    		max-height: 100px;
+			    		max-height: em(100px);
 			    	}
 			    }
 			}
@@ -265,8 +265,8 @@
     			div {
 				    max-height: 100%;
 				    img {
-				    	max-height: 800px;
-				    	max-width: 400px;
+				    	max-height: em(800px);
+				    	max-width: em(400px);
 				    }
 				}			
 			}
@@ -282,8 +282,8 @@
     			div {
 				    max-height: 100%;
 				    img {
-				    	max-height: 800px;
-				    	max-width: 1000px;
+				    	max-height: em(800px);
+				    	max-width: em(1000px);
 				    }
 				}			
 			}
@@ -300,9 +300,9 @@
 			overflow: initial;
 			.article-img {
 				position: absolute;
-				max-width: 200px;
-				top: 100px;
-				right: 50px;
+				max-width: em(200px);
+				top: em(100px);
+				right: em(50px);
 				div {
 					width: 100%;
 				}
@@ -310,9 +310,9 @@
 			.article-img-side {
 			    position: absolute;
 			    display: initial;
-			    top: 150px;
-			    right: -20px;
-			    max-width: 350px;
+			    top: em(150px);
+			    right: em(-20px);
+			    max-width: em(350px);
 			    div	{
 			    	overflow: initial;
 			    }
@@ -327,9 +327,9 @@
 			overflow: initial;
 			.article-img {
 				position: absolute;
-				right: 50px;
-				top: 100px;
-				max-width: 400px;
+				right: em(50px);
+				top: em(100px);
+				max-width: em(400px);
 				div {
 					width: 100%;
 				}
@@ -337,16 +337,16 @@
 			.article-img-side {
 				display: initial;
 			    position: absolute;
-			    top: 50px;
-			    right: -150px;
-			    max-width: 1000px;
+			    top: em(50px);
+			    right: em(-150px);
+			    max-width: em(1000px);
 			    float: none;
     			div {
 				    max-height: 100%;
 				    overflow: initial;
 				    img {
-				    	max-height: 800px;
-				    	max-width: 1000px;
+				    	max-height: em(800px);
+				    	max-width: em(1000px);
 				    }
 				}			
 			}
@@ -369,24 +369,34 @@
 	.item-half {
 		.article-top {
 			.article-img-side {
-			    top: 50px;
-			    right: 100px;
+			    top: em(50px);
+			    right: em(100px);
 			}
 		}
 	}
 	.item-twothird {
 		.article-top {
 			.article-img {
-				right: 250px;
+				right: em(250px);
 			}
 		}
 	}
 
 
 }
+@media (min-width: 961px) and (max-width: 1299px) {
+	.item-twothird {
+		.article-top {
+			.article-img {
+				top: em(150px);
+				position: absolute;
+			}
+		}
+	}
+}
 
 @media (min-width: 961px) and (max-width: 1500px) {
 	.grid-item {
-		height: 700px;
+		height: em(700px);
 	}
 }

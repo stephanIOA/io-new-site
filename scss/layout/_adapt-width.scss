@@ -17,7 +17,7 @@
 @media (min-width: 960px) {
 	.item-third.endfull {
 		.article-bottom {
-		    width: 450px;
+		    width: em(450px);
 		    margin: 0 auto;
 			.article-content {
 				// padding-left: 30%;
@@ -28,13 +28,13 @@
 
 	.item-half.endfull,
 	.item-twothird.endfull {
-		padding-left: 300px;
-		padding-right: 300px;
+		padding-left: em(300px);
+		padding-right: em(300px);
 		.article-top {
 			.article-img-side {
 				display: initial;
 				position: absolute;
-				right: 300px;
+				right: em(300px);
 				bottom: 0;
 				div {
 					overflow: initial;

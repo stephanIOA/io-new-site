@@ -16,12 +16,12 @@ nav {
 	a#pull:after {
         content:"";
         background: url('../img/nav-icon.png') no-repeat;
-        width: 30px;
-        height: 30px;
+        width: em(30px);
+        height: em(30px);
         display: inline-block;
         position: absolute;
-        right: 15px;
-        top: 22px;
+        right: em(15px);
+        top: em(22px);
 	}
 }
 
@@ -36,11 +36,9 @@ nav {
 	padding-right: 1em;
 	padding-bottom: 0.5em;
 	background: $off-white;
-	// width: 100vw;
-	// z-index: 2000;
+	box-shadow: 0 0 1px 0 rgba(90,90,90,.3);
 	.site-logo {
-		width: 40px;
-		// align-self: center;
+		width: em(40px);
 	}
 	.nav {
 		margin-top: 1.5em;
@@ -52,7 +50,6 @@ nav {
 		padding: 0;
 		align-self: center;
 		li {
-			width: 100%;
 			display: block;
 			font-size: 0.8em;
 			font-weight: 300;
@@ -60,11 +57,11 @@ nav {
 			padding: .6em;			
 			button {
 				border-bottom: 1px solid $off-white;
-				letter-spacing: 0.5px;
+				letter-spacing: em(0.5px);
 				&:hover {
 					color: #0b0b0b;
 					border-bottom: #52bab3;
-					border-bottom: 1px solid #52bab3;
+					border-bottom: em(1px) solid #52bab3;
 				}
 			}	
 		}

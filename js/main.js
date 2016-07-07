@@ -1,7 +1,11 @@
 /* MAIN OPERATING JAVASCRIPT FILE */
 
 /* 1. STICKY HEADER PLUGIN */
-$('.main-header').sticky();
+$('.main-header').sticky({
+    topSpacing: 0,
+    getWidthFrom: "body",
+    responsiveWidth: !0
+});
 
 /* 2. ISOTOPE */
 // init Isotope

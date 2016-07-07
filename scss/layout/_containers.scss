@@ -13,8 +13,8 @@
 
 // Individual Article Box
 .grid-item {
-	height: 710px;
-	padding: 50px 50px;
+	height: em(710px);
+	padding: em(50px) em(50px);
 	color: #fff;
 	position: relative;
 	overflow: hidden;
@@ -28,14 +28,14 @@
 @media (min-width: 600px) {
 	// Individual Article Box > 600px
 	.grid-item {
-		height: 650px;
-		padding: 50px 100px;
+		height: em(650px);
+		padding: em(50px) em(100px);
 	}
 }
 @media (min-width: 960px) {
 	// Individual Article Box > 960px
 	.grid-item {
-		height: 600px;	
-		padding: 50px 50px;
+		height: em(600px);	
+		padding: em(50px) em(50px);
 	}
 }
