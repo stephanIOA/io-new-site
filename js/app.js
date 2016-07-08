@@ -14248,5 +14248,27 @@ $(window).resize(function(){
     if(w > 769 && menu.is(':hidden')) {
         menu.removeAttr('style');
     }
-}); 
+});
+
+// 5: Menu Toggle
+(function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+
 //# sourceMappingURL=app.js.map
