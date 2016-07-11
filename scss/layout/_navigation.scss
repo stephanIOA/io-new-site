@@ -1,6 +1,5 @@
 
 // NAVIGATION
-.main-header,
 .nav {
 	display: flex;
 	flex-direction: column;
@@ -65,8 +64,8 @@ nav {
 
 @media (min-width: 769px) {
 	nav {
-		display: flex;
-		align-self: center;
+		// display: flex;
+		// align-self: center;
 		.nav {
 			display: flex;
 			align-self: center;
