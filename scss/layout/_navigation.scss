@@ -30,42 +30,31 @@ nav {
 		display: none;
 	}
 }
-.main-header {
-	padding-top: 0.5em;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: 0.5em;
-	background: $off-white;
-	box-shadow: 0 0 1px 0 $color-shadow;
-	.site-logo {
-		width: em(40px);
-	}
-	.nav {
-		margin-top: 1.5em;
-		margin-bottom: 0;
-		list-style: none;
-		margin-left: 0;
-		padding-left: 0;
-		padding-top: 0;
-		padding: 0;
-		align-self: center;
-		li {
-			display: block;
-			font-size: 0.8em;
-			font-weight: 300;
-			text-align: center;
-			padding: .6em;			
-			button {
-				border-bottom: 1px solid $off-white;
-				letter-spacing: em(0.5px);
-				&:hover {
-					color: #0b0b0b;
-					border-bottom: #52bab3;
-					border-bottom: em(1px) solid #52bab3;
-				}
-			}	
-		}
 
+.nav {
+	margin-top: 1.5em;
+	margin-bottom: 0;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	padding-top: 0;
+	padding: 0;
+	align-self: center;
+	li {
+		display: block;
+		font-size: 0.8em;
+		font-weight: 300;
+		text-align: center;
+		padding: .6em;			
+		button {
+			border-bottom: 1px solid $off-white;
+			letter-spacing: em(0.5px);
+			&:hover {
+				color: #0b0b0b;
+				border-bottom: #52bab3;
+				border-bottom: em(1px) solid #52bab3;
+			}
+		}	
 	}
 
 }
@@ -83,58 +72,42 @@ nav {
 			align-self: center;
 		}
 	}
-	.main-header {
-		padding-top: 1em;
-		padding-bottom: 1em;
-		height: 150px;
-		justify-content: flex-end;
-		.site-logo {
-			width: 60px;
-			align-self: center;
-		}
-		.nav {
-			flex-direction: row;
-			justify-content: space-between;
-			// padding-bottom: 2em;
-			li {
-				border-bottom-color:transparent;
-				font-size: 0.9em;
-			    padding-bottom: 0;
-			}
-		}
-	}
 
+	// Hide Humburger Menu on larger Screens
 	nav {
 		#pull {
 			display: none;
 		}
-}
+	}
 
-
-}
-@media (min-width: 1025px) {
-	.main-header {
-		padding-top: 0;
-		padding-bottom: 0;
-		height: 80px;
-		padding-top: 0;
+	.nav {
 		flex-direction: row;
-		align-self: center;
-		.site-logo {
-			margin-right: auto;
-			width: 30px;
-		}
-		.nav {
-			padding-top: 0;
-			padding-bottom: 0;
-			margin-top: 0;
-			margin-bottom: 0;
-			align-self: center;
-			li {
-				margin-left: 0.85em;
-				margin-right: 0.85em;
-			}
+		justify-content: space-between;
+		li {
+			border-bottom-color:transparent;
+			font-size: 0.9em;
+		    padding-bottom: 0;
 		}
 	}
+
+
+}
+
+
+
+@media (min-width: 1025px) {
+
+	.nav {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		align-self: center;
+		li {
+			margin-left: 0.85em;
+			margin-right: 0.85em;
+		}
+	}
+	
 }
 

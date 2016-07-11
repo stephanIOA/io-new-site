@@ -1,1 +1,42 @@
 // HEADER STYLES
+
+.main-header {
+	padding-top: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 0.5em;
+	background: $off-white;
+	box-shadow: 0 0 1px 0 $color-shadow;
+}
+.site-logo {
+	width: em(90px);
+}
+
+@media (min-width: 769px) {
+	.main-header {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		height: em(150px);
+		justify-content: flex-end;
+	}
+	.site-logo {
+		width: em(60px);
+		align-self: center;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: em(80px);
+		padding-top: 0;
+		flex-direction: row;
+		align-items: center;
+	}
+	.site-logo {
+		margin-right: auto;
+		width: em(30px);
+	}
+}
