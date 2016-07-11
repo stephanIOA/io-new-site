@@ -11,26 +11,22 @@ $grey           : #878787;
 $off-grey		: #354044;
 
 // Color Spectrum
-$light-yellow	: #ffe7ab;
-$baby-blue		: #aee9ef;
-$lime-green		: #63c987;
-$dark-brown		: #512f08;
-$blue			: #479dd6;
-$light-pink		: #ffcccb;
+$cape-honey		: #ffe7ab; 	//light-yellow
+$blizzard-blue	: #aee9ef; 	//baby-blue
+$emerald		: #63c987;	//lime-green
+$cioccolato		: #512f08;	//dark-brown
+$havelock-blue	: #479dd6;	//blue
+$your-pink		: #ffcccb; 	//light-pink
 $io-black		: $black;
-$light-grey		: #d1d9db;
-$mustard		: #ffc046;
-$purple			: #4d3d57;
+$iron-grey		: #d1d9db; 	//light-grey
+$yellow-orange	: #ffc046;	//mustard
+$mulled-wine	: #4d3d57;	//purple
 $beige			: #e6e8da;
 $dark-green		: #1d9b5b;
 
-
-
-// Font stacks
-
-$stack-sans-serif : Helvetica, Arial, sans-serif;
-$stack-fjord : 'Fjord One', serif;
-
+// Color Usage
+$color-primary	: $havelock-blue;
+$color-shadow	: rgba(90,90,90,.3);
 
 // Border radius
 

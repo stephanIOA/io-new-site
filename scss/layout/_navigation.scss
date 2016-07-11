@@ -36,7 +36,7 @@ nav {
 	padding-right: 1em;
 	padding-bottom: 0.5em;
 	background: $off-white;
-	box-shadow: 0 0 1px 0 rgba(90,90,90,.3);
+	box-shadow: 0 0 1px 0 $color-shadow;
 	.site-logo {
 		width: em(40px);
 	}
