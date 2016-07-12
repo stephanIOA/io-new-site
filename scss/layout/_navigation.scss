@@ -47,8 +47,9 @@
 	// Display Logo in middle & the navigation underneath
 	.nav {
 		display: flex;
-		// flex-direction: row;
+		flex-direction: row;
 		justify-content: space-around;
+		width: 100%;
 	}
 	
 
