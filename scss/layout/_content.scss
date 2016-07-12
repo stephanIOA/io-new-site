@@ -318,7 +318,7 @@
 			overflow: initial;
 			.article-img {
 				position: absolute;
-				right: em(50px);
+				right: em(150px);
 				top: em(100px);
 				max-width: em(400px);
 				div {
@@ -343,13 +343,25 @@
 			}
 		}
 	}
+	// One Third Column - Paragraph Text Width
+	.item-third {
+		.article-bottom {
+			max-width: em(381px);
+		}
+	}
 
 	// Half Column - Paragraph Text Width
+	.item-half {
+		.article-bottom {
+			width: 60%;
+			width: em(381px);
+		}
+	}
 	// TwoThird Column - Paragraph Text Width
-	.item-half,
 	.item-twothird {
 		.article-bottom {
 			width: 50%;
+			width: em(381px);
 		}
 	}
 
