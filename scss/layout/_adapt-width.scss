@@ -1,11 +1,10 @@
 /* -------------------------------- 
 ---- LAST BOX WIDTH ADAPT ---------
 ----------------------------------- */
-// .endfull {
-//   right: 0 !important;
-//   // transition: 1s;
-//   width: initial;
-// }
+
+/* Adapts the last grid-item in -----------------
+the layout to adapt to fill up the space -------- */
+
 .endfull, .grid-item:last-child {
   right: 0 !important;
   width: initial;
@@ -15,14 +14,12 @@
 }
 
 @media (min-width: 960px) {
+
 	.item-third.endfull {
+
 		.article-bottom {
 		    width: em(450px);
 		    margin: 0 auto;
-			.article-content {
-				// padding-left: 30%;
-				// padding-right: 30%;
-			}
 		}
 	}
 
@@ -30,6 +27,7 @@
 	.item-twothird.endfull {
 		padding-left: em(300px);
 		padding-right: em(300px);
+
 		.article-top {
 			.article-img-side {
 				display: initial;
@@ -45,6 +43,7 @@
 }
 
 @media (min-width: 961px) and (max-width: 1250px) {
+
 	.item-half.endfull {
 		.article-top {
 			.article-img-side {

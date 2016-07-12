@@ -26,12 +26,14 @@
 ---------------------------------- */
 
 @media (min-width: 600px) {
+
 	// Individual Article Box > 600px
 	.grid-item {
 		height: em(650px);
 		padding: em(50px) em(100px);
 	}
 }
+
 @media (min-width: 960px) {
 	// Individual Article Box > 960px
 	.grid-item {
