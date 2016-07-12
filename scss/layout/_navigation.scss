@@ -24,12 +24,12 @@ nav {
 	}
 }
 
-nav {
-	.nav {
-		display: none;
-	}
+// Hide Navigation
+.nav {
+	display: none;
 }
 
+// Show Navigation
 .nav {
 	margin-top: 1.5em;
 	margin-bottom: 0;
@@ -39,6 +39,7 @@ nav {
 	padding-top: 0;
 	padding: 0;
 	align-self: center;
+	background-color: $off-white;
 	li {
 		display: block;
 		font-size: 0.8em;
