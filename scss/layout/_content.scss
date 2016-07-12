@@ -61,16 +61,6 @@
 	}
 }
 
-// Article Links
-.article-url {
-	position: absolute;
-	bottom: em(50px);
-	a {
-		font-family: $font-family--secondary;
-	}
-}
-
-
 @media (min-width: 480px) {
 
 	.item-third,

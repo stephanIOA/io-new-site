@@ -66,6 +66,11 @@
 	span {
 		color: $io-black;
 	}
+	.article-url {
+		a {
+			border-bottom: 1px solid $io-black;
+		}
+}
 	a {
 	  transition: 0.5s;
 		&:link {

@@ -1,0 +1,18 @@
+/* -------------------------------- 
+----------- LINKS --------
+----------------------------------- */
+
+// Article Links
+.article-url {
+	position: absolute;
+	bottom: em(50px);
+	a {
+		@extend %links;
+	}
+}
+
+// Contact Us Links
+.contact-url {
+	@extend %links;
+	margin-bottom: em(5px);
+}

@@ -3,13 +3,24 @@
 ----------------------------------- */
 
 // CATEGORY/FILTER TITLE
-.box-container {
-	.cat-title {
-		text-transform: uppercase;
-		font-size: 0.7em;
-		display: block;
-		margin-bottom: 0.3em;
-		letter-spacing: em(2px);
-		padding-left: em(2px);
-	}
+.article-category {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	display: block;
+	margin-bottom: 0.3em;
+	letter-spacing: em(2px);
+	padding-left: em(2px);
+}
+
+// Article Title
+.article-title {
+    margin: 0 0 1.4em;
+    font-size: 1.8125em;
+    line-height: 1.17241;
+}
+
+// Article Body Text
+.article-paragraph p {
+	font-family: $font-family--secondary;
+	line-height: ($base__line/$base__font-size);
 }
