@@ -1,28 +1,6 @@
 
 // NAVIGATION
-.nav {
-	display: flex;
-	flex-direction: column;
-}
 
-nav {
-	a#pull {
-		color: $io-black;
-	}
-	a#pull:link {
-		color: $io-black !important;
-	}
-	a#pull:after {
-        content:"";
-        background: url('../img/nav-icon.png') no-repeat;
-        width: em(30px);
-        height: em(30px);
-        display: inline-block;
-        position: absolute;
-        right: em(15px);
-        top: em(22px);
-	}
-}
 
 // Hide Navigation
 .nav {
@@ -40,6 +18,7 @@ nav {
 	padding: 0;
 	align-self: center;
 	background-color: $off-white;
+	width: 100vw;
 	li {
 		display: block;
 		font-size: 0.8em;
@@ -64,32 +43,28 @@ nav {
 ---------------------------------- */
 
 @media (min-width: 769px) {
-	nav {
-		// display: flex;
-		// align-self: center;
-		.nav {
-			display: flex;
-			align-self: center;
-		}
+
+	// Display Logo in middle & the navigation underneath
+	.nav {
+		display: flex;
+		// flex-direction: row;
+		justify-content: space-around;
 	}
+	
 
 	// Hide Humburger Menu on larger Screens
-	nav {
-		#pull {
-			display: none;
-		}
+	#pull {
+		display: none;
 	}
 
+
 	.nav {
-		flex-direction: row;
-		justify-content: space-between;
 		li {
 			border-bottom-color:transparent;
 			font-size: 0.9em;
 		    padding-bottom: 0;
 		}
 	}
-
 
 }
 
@@ -102,7 +77,6 @@ nav {
 		padding-bottom: 0;
 		margin-top: 0;
 		margin-bottom: 0;
-		align-self: center;
 		li {
 			margin-left: 0.85em;
 			margin-right: 0.85em;
