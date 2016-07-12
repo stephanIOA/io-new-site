@@ -19,15 +19,20 @@
 	align-self: center;
 	background-color: $off-white;
 	width: 100vw;
-	li {
+
+	&__item {
 		display: block;
 		font-size: 0.8em;
 		font-weight: 300;
 		text-align: center;
-		padding: .6em;			
+		padding: .6em;
+		letter-spacing: em(2.5px);
+
 		button {
-			border-bottom: 1px solid $off-white;
-			letter-spacing: em(0.5px);
+			border-bottom: 1px solid transparent;
+			letter-spacing: em(0.8px);
+			text-transform: uppercase;
+
 			&:hover {
 				color: #0b0b0b;
 				border-bottom: #52bab3;
@@ -44,26 +49,28 @@
 
 @media (min-width: 769px) {
 
-	// Display Logo in middle & the navigation underneath
+	// Hide Humburger Menu on larger Screens
+	#pull {
+		display: none;
+	}
+
 	.nav {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		width: 100%;
 	}
-	
-
-	// Hide Humburger Menu on larger Screens
-	#pull {
-		display: none;
-	}
-
 
 	.nav {
-		li {
+
+		&__item {
 			border-bottom-color:transparent;
-			font-size: 0.9em;
+			font-size: 0.8em;
 		    padding-bottom: 0;
+
+   			button {
+				letter-spacing: em(1.3px);
+			}
 		}
 	}
 
@@ -78,10 +85,11 @@
 		padding-bottom: 0;
 		margin-top: 0;
 		margin-bottom: 0;
-		li {
+
+		&__item {
 			margin-left: 0.85em;
 			margin-right: 0.85em;
-		}
+		}			
 	}
 	
 }
