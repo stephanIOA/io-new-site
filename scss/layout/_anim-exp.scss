@@ -1,0 +1,30 @@
+/* -------------------------------- 
+------ ANIMATION EXPERIMENT -------
+----------------------------------- */
+
+// Grid Item - Passmarked
+// Animating subtle movement of text and image on
+// grid-item hover.
+.passmarked-img,
+.rover-img {
+	transition: transform 800ms ease-in-out;
+}
+.article-bottom {
+	transition: transform 800ms ease-in-out;
+}
+
+.light-grey-pm,
+.mustard-rover {
+	&:hover .passmarked-img,
+	&:hover .rover-img {
+		transform: translate(-10px, 0px);
+	}
+	// &:hover .article-bottom {
+	// 	transform: translate(0px, -10px);
+	// }
+}
+.grid-item {
+	&:hover .article-bottom {
+		transform: translate(0px, -10px);
+	}	
+}

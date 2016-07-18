@@ -374,7 +374,7 @@
 		.article-top {
 			.article-img-side {
 			    top: em(50px);
-			    right: em(100px);
+			    right: em(0px);
 			}
 		}
 	}
@@ -382,6 +382,9 @@
 		.article-top {
 			.article-img {
 				right: em(250px);
+			}
+			.article-img-side {
+				top: em(50px);
 			}
 		}
 	}
