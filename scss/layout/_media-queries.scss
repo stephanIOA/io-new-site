@@ -1,0 +1,48 @@
+/* -------------------------------- 
+---- Phones & Tablet Media Queries ---------
+----------------------------------- */
+
+// iPhone 5 & 5S in portrait & landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+/* STYLES GO HERE */
+	.main-header {
+		display: block;
+		padding: 0;
+		height: 62px;
+	}
+	.site-logo {
+		display: inline-block;
+		margin-top: 13px;
+		margin-left: 10px;
+		img {
+			width: 40px;
+		}
+	}
+	.nav {
+		width: initial;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}	
+}
+
+// iPad in portrait & landscape
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	/* STYLES GO HERE */
+	.main-header {
+		padding: 0.45em 1.3em;
+	}
+	.site-logo {
+		img {
+			width: 40px;
+		}
+	}
+	.nav {
+		width: initial;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}	
+}
