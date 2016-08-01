@@ -49,10 +49,16 @@ gulp.task("compileSass", function() {
 	.pipe(livereload({ start: true,  }));
 });
 
-// SASS WATCHER
-gulp.task("watchSass", function () {
+// // SASS WATCHER
+// gulp.task("watchSass", function () {
+// 	var server = livereload();
+// 	gulp.watch('scss/**/*.scss', ['compileSass'] );
+// });
+
+gulp.task("watchFiles", function () {
 	var server = livereload();
 	gulp.watch('scss/**/*.scss', ['compileSass'] );
+	gulp.watch('js/main.js', ['concatScripts'] );
 });
 
 // CLEAN Task
@@ -65,6 +71,8 @@ gulp.task("build", ['concatScripts', 'minifyScripts', 'compileSass'], function()
 		return gulp.src(["apple-touch-icon.png", "favicon.ico", "css/normalize.css", "css/application.css", "js/app.min.js", 'index.html', '404.html' , "img/**", "fonts/**"], { base: './'})
 		.pipe(gulp.dest('dist'));
 	});
+
+gulp.task("serve", ['watchFiles']);
 
 // DEFAULT TASK
 gulp.task("default", ["clean"], function() {
