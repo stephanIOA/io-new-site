@@ -55,7 +55,7 @@ gulp.task("compileSass", function() {
 gulp.task('image', function() {
 	gulp.src('img/*')
 	.pipe(imagemin())
-	.pipe(gulp.dest('dist/img'));
+	.pipe(gulp.dest('img'));
 });
 
 // // SASS WATCHER
