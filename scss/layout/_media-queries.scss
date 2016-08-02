@@ -27,6 +27,16 @@ and (max-device-width : 568px) {
 	}	
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+	/* STYLES GO HERE */ 
+	.mustard-rover {
+		height: auto;
+	}
+}
+
 // iPad in portrait & landscape
 @media only screen 
 and (min-device-width : 768px) 
