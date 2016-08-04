@@ -37,7 +37,15 @@ the layout to adapt to fill up the space -------- */
 				}
 			}
 		}
-	}	
+	}
+	span.article-url {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 28.125em;
+		padding-left: em(33px);
+		margin-top: em(10px);
+	}
 }
 
 @media (min-width: 961px) and (max-width: 1250px) {

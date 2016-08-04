@@ -49,6 +49,27 @@ and (orientation : landscape) {
 		}
 	}
 }
+
+
+@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) {
+
+	/* Style */ 
+	.main-footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+}
+
+@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 4) {
+
+	/* Style */ 
+	.main-footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+}
 // iPad in portrait & landscape
 @media only screen 
 and (min-device-width : 768px) 
@@ -67,4 +88,21 @@ and (max-device-width : 1024px)  {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}	
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+	/* STYLES GO HERE */
+	.site-logo {
+		img {
+			width: 30px;
+			margin-top: 10px;
+		}
+	}
+	.nav {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
