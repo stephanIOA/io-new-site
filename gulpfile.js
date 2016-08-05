@@ -19,7 +19,6 @@ var gulp 	= require('gulp'),
 gulp.task("concatScripts", function() {
 	return gulp.src([
 		'js/jquery.js',
-		'js/modernizr-2.8.3.min.js',
 		'js/isotope.js',
 		'js/succinct.js',
 		'js/main.js'
