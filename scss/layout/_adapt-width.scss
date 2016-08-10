@@ -5,7 +5,7 @@
 /* Adapts the last grid-item in -----------------
 the layout to adapt to fill up the space -------- */
 
-.endfull.grid-item:last-child {
+.endfull, .grid-item:last-child {
   right: 0 !important;
   width: initial;
 }
