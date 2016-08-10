@@ -75,7 +75,7 @@ gulp.task("clean", function() {
 
 // BUILD TASK
 gulp.task("build", ['concatScripts', 'minifyScripts', 'compileSass', 'image'], function() {
-		return gulp.src(["apple-touch-icon.png", "favicon.ico", "css/normalize.css", "css/application.css", "js/picturefill.min.js", "js/modernizr.js", "js/app.min.js", 'index.html', '404.html' , "img/**", "fonts/**"], { base: './'})
+		return gulp.src(["apple-touch-icon.png", "favicon.ico", "css/normalize.css", "css/application.css", "js/picturefill.min.js", "js/modernizr.js", "js/app.min.js", 'index.html', 'team.html', '404.html', "img/**", "fonts/**"], { base: './'})
 		.pipe(gulp.dest('dist'));
 	});
 
