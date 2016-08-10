@@ -20,17 +20,11 @@
 	.item-third {
 		.team-img {
 		margin-bottom: -100px;
+		display: none;
 		}
 	}
 	.io-team {
 		height: 800px;
-	}
-}
-@media (min-width: 960px) {
-	.item-third {
-		.team-img {
-		margin-bottom: -100px;
-		}
 	}
 }
 
@@ -38,6 +32,7 @@
 	.item-third {
 		.team-img {
 		margin-bottom: -150px;
+		display: initial;
 		}
 	}
 }
