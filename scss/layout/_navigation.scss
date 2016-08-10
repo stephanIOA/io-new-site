@@ -102,3 +102,11 @@
 	
 }
 
+@media (min-width: 1155px) {
+	.nav {
+		&__item {
+			font-size: 0.8em;
+		}
+	}
+}
+
