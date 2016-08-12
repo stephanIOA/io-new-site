@@ -39,7 +39,14 @@
 @media (min-width: 1300px) {
 	.item-third {
 		.team-img {
-		margin-bottom: -200px;
+			margin-bottom: -200px;
+		}
+	}
+}
+@media (min-width: 1550px) {
+	.item-third {
+		.team-img {
+			max-width: 420px;
 		}
 	}
 }
