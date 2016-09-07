@@ -18,8 +18,8 @@
 
 // Header Styles
 .main-header {
-	padding-top: 0.75em;
-	padding-bottom: 0.75em;
+	padding-top: 0.70em;
+	padding-bottom: 0.70em;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	background: $off-white;
@@ -30,6 +30,7 @@
 .site-logo {
 	margin-right: auto;
 	width: em(30px);
+	margin-top: em(6px);
 }
 
 @media (min-width: 880px) {
@@ -81,6 +82,7 @@
 	.site-logo {
 		margin-right: auto;
 		width: em(30px);
+		margin-top: em(5px);
 	}
 
 }
