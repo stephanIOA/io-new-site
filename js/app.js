@@ -13911,7 +13911,7 @@ var trim = String.prototype.trim ?
 })(jQuery);
 
 /* MAIN OPERATING JAVASCRIPT FILE */
-
+var $adaptGrid = $('.adaptGrid');
 /* 1. STICKY HEADER PLUGIN */
 // $('.main-header').sticky({
 //     topSpacing: 0,
@@ -13933,7 +13933,7 @@ $('.filter-button-group').on( 'click', 'button', function() {
   $grid.isotope({ filter: filterValue });
 });
 
-$grid.on("arrangeComplete", function(e, t) {
+$adaptGrid.on("arrangeComplete", function(e, t) {
   if (!t.length) return false;
   var n = ($(t[0].element),
   $(t[t.length - 1].element));

@@ -5,12 +5,16 @@
 /* Adapts the last grid-item in -----------------
 the layout to adapt to fill up the space -------- */
 
-.endfull, .grid-item:last-child {
+div.grid-item.endfull {
   right: 0 !important;
   width: initial;
 }
 .grid-item:last-child {
   right: 0;
+}
+.grid-item:last-child {
+  right: 0 !important;
+  width: initial;
 }
 
 @media (min-width: 960px) {
@@ -38,14 +42,17 @@ the layout to adapt to fill up the space -------- */
 			}
 		}
 	}
-	span.article-url.endfull {
-		position: relative;
-		display: block;
-		margin: 0 auto;
-		width: 28.125em;
-		padding-left: em(33px);
-		margin-top: em(10px);
+	.grid-item.endfull {
+		span.article-url {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			width: 28.125em;
+			padding-left: em(33px);
+			margin-top: em(10px);
+		}
 	}
+
 }
 
 @media (min-width: 961px) and (max-width: 1250px) {
