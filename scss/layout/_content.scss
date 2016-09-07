@@ -155,6 +155,9 @@
 	.grid-item,{
 		position: relative;
 		overflow: hidden;
+		.paragraph p {
+			font-size: 14px;
+		}
 	}
 
 	// Third Top & Bottom
@@ -286,6 +289,12 @@
 
 @media (min-width: 1300px) {
 
+	.grid-item {
+		.paragraph p {
+			font-size: 16px;
+		}
+	}
+
 		// Half Column --Article Image--
 	.item-half {
 		.article-top {
@@ -404,6 +413,6 @@
 
 @media (min-width: 961px) and (max-width: 1500px) {
 	.grid-item {
-		height: em(700px);
+		height: em(600px);
 	}
 }
