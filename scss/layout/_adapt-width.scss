@@ -5,17 +5,17 @@
 /* Adapts the last grid-item in -----------------
 the layout to adapt to fill up the space -------- */
 
-// div.grid-item.endfull {
-//   right: 0 !important;
-//   width: initial;
-// }
-// .grid-item:last-child {
-//   right: 0;
-// }
-// .grid-item:last-child {
-//   right: 0 !important;
-//   width: initial;
-// }
+div.grid-item.endfull {
+  right: 0 !important;
+  width: initial;
+}
+.grid-item:last-child {
+  right: 0;
+}
+.grid-item:last-child {
+  right: 0 !important;
+  width: initial;
+}
 
 @media (min-width: 960px) {
 
@@ -50,6 +50,10 @@ the layout to adapt to fill up the space -------- */
 			width: 28.125em;
 			padding-left: em(33px);
 			margin-top: em(10px);
+		}
+		span.article-left {
+			margin: 0;
+			padding-left: 0;
 		}
 	}
 
