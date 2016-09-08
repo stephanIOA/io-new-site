@@ -11,7 +11,8 @@ var gulp 	= require('gulp'),
 	del 	= require('del'),
 	livereload = require('gulp-livereload'),
 	prefix	= require('gulp-autoprefixer'),
-	imagemin = require('gulp-imagemin');
+	imagemin = require('gulp-imagemin'),
+	htmlmin = require('gulp-htmlmin');
 
 // B:: GULP TASKS:
 
@@ -34,6 +35,12 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
 	.pipe(uglify())
 	.pipe(rename('app.min.js'))
 	.pipe(gulp.dest("js"));
+});
+
+gulp.task('minifyHtml', function() {
+  return gulp.src('*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'));
 });
 
 // Compile Sass
